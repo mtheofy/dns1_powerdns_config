@@ -1,0 +1,3 @@
+recordcache:
+  serve_stale_extensions: 1440
+  refresh_on_ttl_perc: 10

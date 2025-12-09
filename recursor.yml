@@ -1,0 +1,2 @@
+recursor:
+  include_dir: /etc/powerdns/recursor.d

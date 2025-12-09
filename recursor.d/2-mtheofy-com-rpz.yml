@@ -1,0 +1,6 @@
+recursor:
+  rpzs:
+  - name: "/opt/powerdns/rpzlists/mtheofy.com.rpz"
+    includeSOA: true
+    ignoreDuplicates: true
+    #defpol: NoAction

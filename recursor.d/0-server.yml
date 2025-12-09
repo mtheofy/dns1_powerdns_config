@@ -1,0 +1,11 @@
+recursor:
+  serve_rfc1918: true
+  serve_rfc6303: true
+  extended_resolution_errors: true
+  # hint_file: /usr/share/dns/root.hints
+  minimum_ttl_override: 90
+  public_suffix_list_file: "/etc/powerdns/public_suffix_list.dat"
+
+# Qname minization at the recursor level - not here
+  qname_minimization: false
+

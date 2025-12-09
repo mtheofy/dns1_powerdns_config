@@ -1,0 +1,22 @@
+outgoing:
+ source_address:
+   - 0.0.0.0
+   - '::'
+ edns_bufsize: 1452
+ # Give up on ECS subnet
+ # edns_subnet_allow_list: ['.']
+#Disable probing since we forward to a recursor
+ max_busy_dot_probes: 0
+ network_timeout: 2500
+ tcp_fast_open_connect: true
+ dont_query:
+   - 127.0.0.0/8
+ udp_source_port_min: 1024
+ udp_source_port_max: 65535
+ udp_source_port_avoid:
+# Forwarding bind resolver converts it anyway to lowercase
+ lowercase: true
+ dont_throttle_netmasks:
+   - 'fd12:1111:2222::/48'
+   - '192.168.0.0/16'
+   - '2a02:587::/29'
