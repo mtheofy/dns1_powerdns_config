@@ -12,7 +12,6 @@ This repository now groups related settings by scope and load order while preser
 - `recursor.d/30-upstreams.yml` — authoritative zone files and recursive forwarders (root zone only) plus reference examples.
 - `recursor.d/32-ecs.yml` — ECS minimum TTL override.
 - `recursor.d/40-cache.yml` — stale-serving settings and refresh percentage.
-- `recursor.d/50-throttle-exceptions.map` — throttle map dump placeholder.
 
 ## Notes
 - Numeric prefixes keep related topics spaced for future inserts (00/01/02…40/50).
