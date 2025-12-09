@@ -24,6 +24,11 @@ recursor:
       defttl: 3600
       defpol: NXDOMAIN
 
+    - name: "/opt/powerdns/rpzlists/mtheofy.com.rpz"
+      includeSOA: true
+      ignoreDuplicates: true
+      #defpol: NoAction
+
     # abuse.ch lists
     - name: 'rpz.urlhaus.abuse.ch'
       addresses: ['54.36.110.62']
